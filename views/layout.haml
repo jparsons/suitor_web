@@ -4,9 +4,13 @@
     %title Send a message from Reddit!!
     %script{:type => 'text/javascript', :src => '/javascripts/jquery-1.11.1.min.js'}
     %script{:type => 'text/javascript', :src => '/javascripts/form.js'}
+    %script{:type => 'text/javascript', :src => '/javascripts/bootstrap.min.js'}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "/stylesheets/bootstrap.min.css"}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "/stylesheets/bootstrap-theme.min.css"}
+
   %body
-    #wrapper
-      #header
-        %h1 Send a message from Reddit
-      #content
-        =yield
+    .container
+      .row
+        %h1.text-center Send a message from Reddit
+        .col-xs-6.col-xs-offset-3
+          =yield

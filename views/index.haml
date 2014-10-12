@@ -1,11 +1,10 @@
 #message
-%form{action: "/send_message", method: "post", id: "send_message"}
-  %label{for: "subreddit"} Subreddit to send message from:
-  %br/
-  %input{name: "subreddit", type: "text"}
-  %br/
-  %label{for: "phone_number"} Phone number to send the message to:
-  %br/
-  %input{name: 'phone_number', type: "text"}
+%form{action: "/send_message", method: "post", id: "send_message", role: "form"}
+  .form-group
+    %label{for: "subreddit"} Subreddit to send message from:
+    %input{name: "subreddit", type: "text", class: "form-control"}
+  .form-group
+    %label{for: "phone_number"} Phone number to send the message to:
+    %input{name: 'phone_number', type: "text", class: "form-control"}
   %br
-  %input{type: "submit"}/
+  %input{type: "submit", class: 'btn btn-default'}/

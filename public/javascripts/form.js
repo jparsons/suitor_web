@@ -5,8 +5,6 @@ $(function(){
       $("#message").html(response);
     });
     $(this).trigger("reset");
-    $("#message").fadeIn();
-    $("#message").fadeOut();
     event.preventDefault();
   });
 });
