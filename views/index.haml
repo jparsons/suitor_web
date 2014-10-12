@@ -1,0 +1,11 @@
+#message
+%form{action: "/send_message", method: "post", id: "send_message"}
+  %label{for: "subreddit"} Subreddit to send message from:
+  %br/
+  %input{name: "subreddit", type: "text"}
+  %br/
+  %label{for: "phone_number"} Phone number to send the message to:
+  %br/
+  %input{name: 'phone_number', type: "text"}
+  %br
+  %input{type: "submit"}/
