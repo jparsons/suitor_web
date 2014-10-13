@@ -1,7 +1,9 @@
-PATH
-  remote: ../suitor-john-parsons
+GIT
+  remote: https://github.com/promptworks/suitor-john-parsons.git
+  revision: 8f69cd52e181ffd94a3f8cbcc6226d53ae9a806b
+  branch: development
   specs:
-    suitor (0.0.3)
+    suitor (0.0.4)
       redditkit
       thor
       twilio-ruby
