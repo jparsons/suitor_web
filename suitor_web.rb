@@ -1,6 +1,7 @@
 require 'sinatra'
 
 class SuitorWeb < Sinatra::Base
+
   get '/' do
     haml :index
   end
@@ -14,6 +15,11 @@ class SuitorWeb < Sinatra::Base
     rescue => e
       haml :failure, layout: false
     end
-
   end
+
+  post '/get_random_subreddit' do
+    Suitor::SubredditFinder.get_random_subreddit
+  end
+
+
 end
